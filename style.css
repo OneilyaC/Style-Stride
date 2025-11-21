@@ -1,0 +1,359 @@
+/* Oneilya Cameron
+2403208
+Monday @3-5pm */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #1A2A6C;
+  margin: 0;
+  padding-top: 90px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #ADD8E6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 40px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 40px;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #1A2A6C;
+}
+
+header .logo p {
+  margin-top: 2px;
+  font-size: 13px;
+  font-style: italic;
+  color: #1A2A6C;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1A2A6C;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav .btn {
+  background-color: #1A2A6C;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+}
+
+nav .btn:hover {
+  background-color: #004080;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-color: #e6f0ff;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  background-color: #1A2A6C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #004080;
+}
+
+.featured {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.featured h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.product-card p {
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.shop-section {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.shop-section h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #1A2A6C;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.shop-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shop-card:hover {
+  transform: translateY(-5px);
+}
+
+.shop-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.shop-card h2 {
+  font-size: 1.1em;
+  color: #1A2A6C;
+  margin: 10px 0 5px;
+}
+
+.shop-card p {
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.shop-card button {
+  background-color: #1A2A6C;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-card button:hover {
+  background-color: #004080;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 100px 20px 60px;
+  background-color: #e6f0ff;
+}
+
+.form-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-box h1 {
+  color: #1A2A6C;
+  margin-bottom: 25px;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-box label {
+  margin-bottom: 5px;
+  color: #1A2A6C;
+  font-weight: bold;
+}
+
+.form-box input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-box button {
+  background-color: #1A2A6C;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-box button:hover {
+  background-color: #004080;
+}
+
+.form-box p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form-box a {
+  color: #1A2A6C;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
+
+.cart-container,
+.checkout-container,
+.invoice-container,
+.about-container {
+  max-width: 700px;
+  margin: 120px auto 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cart-table, .invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.cart-table th, .cart-table td,
+.invoice-table th, .invoice-table td {
+  border: 1px solid #1A2A6C;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-table th, .invoice-table th {
+  background-color: #ADD8E6;
+  color: #1A2A6C;
+}
+
+.cart-table input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+}
+
+.cart-summary, .invoice-summary {
+  margin-top: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+
+footer {
+  background-color: #ADD8E6;
+  text-align: center;
+  padding: 10px;
+  color: #1A2A6C;
+  font-size: 14px;
+  margin-top: 40px;
+}
