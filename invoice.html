@@ -1,0 +1,66 @@
+<!--Oneilya Cameron
+2403208
+Monday @3-5pm-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Stride | Invoice</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1><img src="../Assets/logo.jpg" alt="logo" width="50" height="50">Style Stride</h1>
+      <p>Walk in Style</p>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>|
+      <a href="shop.html">Shop</a>|
+      <a href="checkout.html">Checkout</a>|
+      <a href="about_us.html">About Us</a>
+    </nav>
+  </header>
+
+  <main class="invoice-container">
+  <h2>Invoice</h2>
+
+  <p><strong>Name:</strong> <span id="invName"></span></p>
+  <p><strong>Email:</strong> <span id="invEmail"></span></p>
+  <p><strong>Address:</strong> <span id="invAddress"></span></p>
+
+  <table class="invoice-table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price (JMD)</th>
+      </tr>
+    </thead>
+    <tbody id="invoiceBody">
+
+    </tbody>
+  </table>
+
+  <section class="invoice-summary">
+
+  </section>
+
+  <div class="invoice-buttons">
+    <button onclick="window.print()">Print Invoice</button>
+    <button onclick="location.href='shop.html'">Back to Shop</button>
+  </div>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 Style Stride | Walk in Style</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

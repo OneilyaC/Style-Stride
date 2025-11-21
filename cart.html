@@ -1,0 +1,64 @@
+<!--Oneilya Cameron
+2403208
+Monday @3-5pm-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Style Stride | Cart</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1><img src="../Assets/logo.jpg" alt="logo" width="50" height="50">Style Stride</h1>
+      <p>Walk in Style</p>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>|
+      <a href="shop.html">Shop</a>|
+      <a href="cart.html" class="active">Cart</a>|
+      <a href="checkout.html">Checkout</a>|
+      <a href="about_us.html">About Us</a>
+    </nav>
+  </header>
+
+ <main class="cart-container">
+  <h2>Your Shopping Cart</h2>
+
+  <table class="cart-table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Unit Price (JMD)</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+
+  <section class="cart-summary">
+
+  </section>
+
+  <div class="cart-buttons">
+    <button onclick="clearCart()">Clear All</button>
+    <button onclick="location.href='checkout.html'">Check Out</button>
+  </div>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 Style Stride | Walk in Style</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!--Oneilya Cameron
+2403208
+Monday @3-5pm-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Style Stride</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1><img src="../Assets/logo.jpg" alt="logo" width="50" height="50">Style Stride</h1>
+      <p>Walk in Style</p>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>|
+      <a href="shop.html" class="active">Shop</a>|
+      <a href="cart.html">Cart</a>|
+      <a href="checkout.html">Checkout</a>|
+      <a href="about_us.html">About Us</a>
+    </nav>
+  </header>
+
+  <section class="shop-section">
+    <h1>Our Latest Collection</h1>
+    <div class="products">
+      <div class="shop-card">
+        <img src="../Assets/sandals.jpg" alt="Women's Sandals">
+        <h2>Women's Sandals</h2>
+        <p>$10,000.00</p>
+        <button onclick="addToCart('Women\'s Sandals', 10000)">Add to Cart</button>
+      </div>
+
+      <div class="shop-card">
+        <img src="../Assets/mpants.jpeg" alt="Men's Cargo Pants">
+        <h2>Men's Cargo Pants</h2>
+        <p>$7,000.00</p>
+        <button onclick="addToCart('Men\'s Cargo Pants', 7000)">Add to Cart</button>
+      </div>
+
+      <div class="shop-card">
+        <img src="../Assets/sneakers.jpeg" alt="Sneakers">
+        <h2>Sneakers</h2>
+        <p>$15,000.00</p>
+        <button onclick="addToCart('Sneakers', 15000)">Add to Cart</button>
+      </div>
+     
+      <div class="shop-card"> <img src="../Assets/wpants_.jpg" alt="Female Work Pants"> 
+        <h2>Female Work Pants</h2> <p>$4,000.00</p> 
+        <button onclick="addToCart('Female Work Pants', 4000)">Add to Cart</button>
+    </div>
+      
+        <div class="shop-card"> <img src="../Assets/wdress.jpeg" alt="Female Formal Dress"> 
+     <h2>Female Formal Dress</h2> <p>$8,500.00</p> 
+     <button onclick="addToCart('Female_Dress', 15000)">Add to Cart</button>
+     </div>
+
+      <div class="shop-card"> <img src="../Assets/tshirt.jpeg" alt="Men's Plain T-Shirt">
+     <h2>Men's Plain T-Shirt</h2> <p>$3,500.00</p> 
+     <button onclick="addToCart(' T-Shirt', 15000)">Add to Cart</button>
+      </div>
+
+      <div class="shop-card"> 
+        <img src="../Assets/weddingdress.jpeg" alt="Wedding Dress"> 
+        <h2>Wedding Dress</h2> <p>$25,500.00</p> 
+        <button onclick="addToCart('Wedding_Dress', 15000)">Add to Cart</button>
+    </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Style Stride | Walk in Style</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
